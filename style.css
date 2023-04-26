@@ -4,11 +4,156 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 :root{
     --primary-color: #FFF0DE;
     --secondary-color: #FFA800;
     font-family: 'Quicksand', sans-serif;
+}
+.head{
+    height:6vh;
+    padding-top: 2vh;
+    background-color: var(--primary-color);
+    padding-bottom: 2vh;
+    
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.logo > img{
+    margin-left:4vw;
+    height: 25px;
+    
+    background-color: aqua;
+}
+
+.logo-svg {
+    fill:black;
+    width:fit-content
+}
+
+ul {
+    display:flex;
+    justify-content: space-around;
+    width:55vw;
+    margin-right: 4vw;
+}
+
+ul > .list {
+    text-decoration: none;
+    display:block
+}
+
+.about, .contact, .find, .reviews{
+    font-weight: bold;
+    margin-top:5px;
+}
+
+.about:hover, .find:hover, .reviews:hover, .contact:hover{
+    text-decoration: underline 3px var(--secondary-color);
+}
+
+.signin{
+    width:95px;
+    text-align: center;
+    height:33px;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    cursor:pointer;
+    padding-top: 3px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transition:all .2s ease-in-out;
+    font-size: 15px;
+}
+
+
+.signin:hover{
+    background-color: var(--secondary-color);
+    font-weight: 1000;
+}
+
+.hero{
+    background-color: var(--primary-color);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height:80vh;
+    width:100vw;
+}
+
+.hero-left{
+    margin-left: 20px;
+}
+
+.hero-right{
+    margin-right: 25px;
+}
+
+.hero-heading{
+    margin-bottom: 3vh;
+    width:55%;
+    font-size: 45px;
+}
+
+.search-box {
+    position:relative;
+    z-index:2;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    margin-top:3vh;
+  }
+  
+ 
+  
+  .search-box input {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    color:#AEAEAE;
+  }
+  
+  .search-box input:focus {
+    color: #000;    
+}
+  
+  .search-btn {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .search-btn i { 
+    font-size: 18px;
+  }
+  
+  
+  
+.map{
+    max-width: 40vw;
 }
 
