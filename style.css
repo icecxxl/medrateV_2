@@ -178,8 +178,8 @@ a::after {
     max-width: 40vw;
 }
 
-.slider{
-    height:90vh;
+.aboutP{
+    height:100vh;
 }
 
 .container {
@@ -227,6 +227,30 @@ a::after {
     background-color: #000;
   }
   
+  .reviewsP{
+    background-color: var(--primary-color);
+    height: 100vh;
+  }
+
+  .review-header{
+    padding: 3% 35%;
+    text-align: center;
+    font-size: clamp(24px, 3.5vw, 48px);
+    font-weight: 500;
+  
+  }
+
+  .review-span{
+    color:var(--secondary-color);
+  }
+
+  .reviews-main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+
   @media screen and (max-width: 768px) {
     .swiper-navBtn {
       display: none;
