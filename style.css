@@ -50,12 +50,33 @@ ul > .list {
     display:block
 }
 
+a{
+    text-decoration: none;
+    color:#000;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+  }
+  
+  a:hover::after {
+    background-color: var(--secondary-color); 
+  }
+
 .about, .contact, .find, .reviews{
     font-weight: bold;
     margin-top:5px;
 }
 
-.about:hover, .find:hover, .reviews:hover, .contact:hover{
+.find:hover,  .contact:hover{
     text-decoration: underline 3px var(--secondary-color);
 }
 
