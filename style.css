@@ -85,7 +85,7 @@ ul > .list {
     display:flex;
     align-items: center;
     justify-content: space-around;
-    height:80vh;
+    height:90vh;
     width:100vw;
 }
 
@@ -157,3 +157,57 @@ ul > .list {
     max-width: 40vw;
 }
 
+.slider{
+    height:90vh;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+  
+
+  .card-wrapper{
+    display:flex;
+    justify-content: space-around;
+    width:100vw;
+  }
+
+  .card{
+    width: 300px;
+    font-size: 1.3em;
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 300px;
+    padding: 10% 1%;
+    font-weight:200;
+  }
+
+
+  
+  .swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
