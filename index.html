@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+   
     <title>MedRate</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
             <h1 class="hero-heading">Find and Rate Hospitals near you</h1>
             <div class="search-box">
                 <input type="text" placeholder="Find hospitals">
-                <form action="connect.php" method="post" class="search-btn">
+                <form action="#" method="post" class="search-btn">
                   <button class="search-btn"><i class="fa fa-search"></i></button>
                 </form>
               </div>
@@ -42,7 +44,47 @@
         </div>
     </section>
 
+    <section class="slider">
+        <h2 class="aboutP">What we are <span class="about-span">about</span></h2>
 
+        <div class="container swiper">
+            <div class="slide-container">
+               <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
+                      </div>
+                      
+                      <div class="card swiper-slide">
+                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
+                      </div>
+      
+                      <div class="card swiper-slide">
+                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
+                      </div>
+      
+                      <div class="card swiper-slide">
+                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
+                      </div>
+      
+                      <div class="card swiper-slide">
+                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
+                      </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+      
+          </div>
+      
+          
+      
+        
+      
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
