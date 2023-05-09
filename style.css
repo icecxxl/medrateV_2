@@ -199,6 +199,10 @@ a::after {
   
 }
 
+.swiper-wrapper{
+  
+}
+
 
 .swiper-slide {
   text-align: center;
@@ -216,20 +220,26 @@ a::after {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background-image: url(assets/Vector\ 1.svg);
-  background-repeat: no-repeat;
-  background-position:center;
+  
   
   
 }
 
-.swiper-wrapper{
+.swiper-text{
+  background-color: var(--primary-color);
+  height: 50vh;
+  width: 60vw;
+  text-align: center;
+  padding: 8% 5%;
+  font-size:36px;
+  font-weight:500;
+  background-image: url(assets/Vector\ 1.svg);
   
 }
 
 .navigation{
   margin-top:5vh;
-  height:50vh;
+  
 }
 
 .swiper-pagination {
@@ -245,15 +255,25 @@ a::after {
   position:absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 120px;
+  height: 63px;
   background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin: 0 5%;
+  padding: 35px 35px;
+  background-color: var(--lighter-shade);
+  transition: all .2s ease;
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: black;
+}
+
 
 .swiper-button-prev {
   left: 1rem;
@@ -261,6 +281,11 @@ a::after {
 
 .swiper-button-next {
   right: 1rem;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--secondary-color);
 }
 
 
