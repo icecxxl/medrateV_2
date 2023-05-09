@@ -25,18 +25,17 @@
     display:flex;
     justify-content: space-between;
     font-size: 15px;
+    width:100vw'
 }
 
-.logo > img{
-    margin-left:4vw;
-    height: 25px;
-    
-    background-color: aqua;
+.logo{
+  width:10vw;
 }
 
 .logo-svg {
-    fill:black;
-    width:fit-content
+   height:100px;
+    width:100px;
+  
 }
 
 ul {
@@ -184,7 +183,7 @@ a::after {
     height:100vh;
     display:flex;
     flex-direction: column;
-    
+    overflow:hidden;
 }
 
 .about-header{
@@ -216,7 +215,9 @@ a::after {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  
+  background-image: url(assets/Vector\ 1.svg);
+  background-repeat: no-repeat;
+  background-position:center;
   
   
 }
