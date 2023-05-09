@@ -28,10 +28,6 @@
     width:100vw'
 }
 
-.logo{
-  width:10vw;
-}
-
 .logo-svg {
    height:100px;
     width:100px;
@@ -41,7 +37,7 @@
 ul {
     display:flex;
     justify-content: space-around;
-    width:55vw;
+    width:35vw;
     margin-right: 4vw;
 }
 
@@ -71,13 +67,9 @@ a::after {
     background-color: var(--secondary-color); 
   }
 
-.about, .contact, .find, .reviews{
+.about, .contact{
     font-weight: bold;
     margin-top:5px;
-}
-
-.find:hover,  .contact:hover{
-    text-decoration: underline 3px var(--secondary-color);
 }
 
 .signin{
@@ -188,6 +180,15 @@ a::after {
 
 .about-header{
   align-self: center;
+  margin-top: 3vh;
+  font-size: clamp(24px, 3.5vw, 48px);
+  font-weight: 500;
+  width:20vw;
+  text-align: center;
+}
+
+.about-span{
+  color:var(--secondary-color);
 }
 
 /* slides section */
