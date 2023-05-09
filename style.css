@@ -232,9 +232,11 @@ a::after {
   text-align: center;
   padding: 8% 5%;
   font-size:36px;
-  font-weight:500;
+  font-weight:580;
   background-image: url(assets/Vector\ 1.svg);
-  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .navigation{
