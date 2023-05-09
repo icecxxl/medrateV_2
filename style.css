@@ -366,6 +366,14 @@ a::after {
     margin-top:5%;
   }
 
+  .footer-texts > a{
+    color:#fff;
+  }
+
+  .foot-text{
+    color:#fff;
+  }
+
   .socials{
     display:flex;
     justify-content: space-between;
