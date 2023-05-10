@@ -256,14 +256,13 @@ a::after {
   transform: translateY(-50%);
   width: 120px;
   height: 63px;
-  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   margin: 0 5%;
-  padding: 35px 35px;
+  padding: 35px;
   background-color: var(--lighter-shade);
   transition: all .2s ease;
 }
@@ -422,10 +421,12 @@ a::after {
     
     .hero-left {
       margin: 30px auto;
+      
     }
     
     .hero-right {
       margin: 30px auto;
+      overflow:hidden;
     }
     
     .hero-heading {
@@ -533,5 +534,42 @@ a::after {
   .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
   }
+
+  .aboutP{
+    height:90vh;
+  }
+
+  .about-header{
+    width: 40%;
+  }
+
+  .swiper-text{
+    width:70vw;
+    font-size:1.1em;
+    padding-top: 15%;
+  }
+
+  .swiper-button-prev,
+.swiper-button-next{
+  margin:auto;
+  width: 20px;
+  height: 15px;
+  padding:25px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size:30px !important;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width:12px;
+  height:12px;
+}
+
+  .reviewsP{
+    overflow:hidden;
+  }
+
   }
   
