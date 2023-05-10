@@ -579,6 +579,23 @@ a::after {
   .reviewsP{
     overflow:hidden;
   }
+
+
+  /* reviews section */
+  .reviewsP{
+    height:auto;
+  }
+  .reviews-main{
+    grid-template-columns: 1fr;
+    height:auto;
+    gap:20px;
+    margin-left:15%;
+    margin-bottom: 15%;
+  }
+
+  .review-card{
+    width:80%;
+  }
   
   /* footer section */
   .footer-texts {
