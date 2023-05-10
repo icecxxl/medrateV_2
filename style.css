@@ -410,7 +410,6 @@ a::after {
     margin-right:10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
     background-color:#fff;
 }
 
@@ -433,6 +432,7 @@ a::after {
       font-size: 30px;
       width: 90vw;
       text-align: center;
+      
     }
     
     .search-box {
@@ -443,12 +443,13 @@ a::after {
     }
 
     .search-box > input{
-      font-size:20px;
+      font-size:18px;
     }
     
     .icons {
       max-width: 80%;
       margin-left:11vw;
+      
     }
 
     .nav-menu {
@@ -456,15 +457,37 @@ a::after {
       left: -100%;
       top: 5rem;
       flex-direction: column;
-      background-color: #fff;
-      width: 100%;
+      justify-content: flex-start;
+      background-color: var(--secondary-color);
+      width: 90%;
+      height: auto;
+      margin-left: 5%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
-          z-index:0;
-          color:#000;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+      color:#000;
+      z-index:10000;
+      
+  }
+
+  ul > .signin{
+    margin-left: 20vw;
+    margin-top: 18px; 
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight:bold;
+    background-color: var(--lighter-shade);
+    width:55vw;
+    height:50px;
+  }
+
+  ul > .signin:hover{
+    background-color: var(--primary-color);
+  }
+
+  .signin a{
+    margin-bottom: 20px;
   }
 
   .nav-menu.active {
@@ -472,13 +495,14 @@ a::after {
   }
 
   .nav-item {
-      margin: 2rem 0;
+      margin: 1.7rem 0;
+      
   }
 
   .nav-item a{
       color:#000;
       z-index:5;
-      font-size: 14px;
+      font-size:20px;
   }
 
  
@@ -494,6 +518,8 @@ a::after {
   .hamburger {
       display: block;
       cursor: pointer;
+      margin-right: 10px;
+      
   }
 
   .hamburger.active .bar:nth-child(2) {
