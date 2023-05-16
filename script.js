@@ -33,3 +33,28 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 };
+
+
+// Hero section heading edits
+const changingText = document.getElementById('changing-text');
+const texts = ['Rate', 'Review', 'Improve'];
+let currentIndex = 0;
+
+function changeText() {
+  changingText.classList.add('fade-out');
+  setTimeout(() => {
+    changingText.textContent = texts[currentIndex];
+    changingText.classList.remove('fade-out');
+    changingText.classList.add('fade-in');
+    currentIndex = (currentIndex + 1) % texts.length;
+    setTimeout(() => {
+      changingText.classList.remove('fade-in');
+    }, 300);
+  }, 300);
+}
+
+// Call the changeText function initially
+changeText();
+
+// Set an interval to call the changeText function every 2 seconds
+setInterval(changeText, 3000);
