@@ -116,8 +116,8 @@ a::after {
     font-size: 120px;
     font-weight: bold;
 margin-left: -10vw;
-    /* opacity: 0;
-  animation: fade-in 2s ease-in forwards; */
+    opacity: 0;
+  animation: fade-in 1.5s ease-in forwards;
     margin-bottom: 20vh;
 }
 
@@ -141,7 +141,7 @@ margin-left: -10vw;
 }
 
 
-/* @keyframes fade-in {
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: perspective(100px) translateY(20px);
@@ -154,9 +154,6 @@ margin-left: -10vw;
   }
 }
 
-.hero-heading span {
-  display: inline-block;
- } */
 
 .search-box {
     position:relative;
@@ -457,19 +454,25 @@ margin-left: -10vw;
   @media screen and (max-width: 768px) {
     .hero {
       flex-direction: column;
-      height: 90vh;
+      height: 80vh;
     }
     
     .hero-heading {
-      font-size: 30px;
-      width: 90vw;
+      font-size: 45px;
+      width: 100vw;
       text-align: center;
-      
+      justify-content: space-evenly;
+      margin-top:10vh;
+      margin-bottom: -1vh;
+    }
+
+    #changing-text{
+     margin-left:-15vw;
     }
     
     .search-box {
       width: 90vw;
-      margin: 3vh auto;
+      margin: 10vh auto;
       height:6vh;
       border-radius: 8px;
     }
