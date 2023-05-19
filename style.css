@@ -101,21 +101,29 @@ a::after {
 .hero{
     background: var(--primary-color);
     display:flex;
-    flex-direction: column;
+    
     align-items: center;
-    justify-content: center;
+    
     height:90vh;
     overflow: hidden;
 
 }
 
+.hero-left{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width:50vw;
+}
+
 .hero-heading{
   display: flex;
   justify-content: space-around;
-    width:80vw;
-    font-size: 120px;
+    width:50vw;
+    font-size: 64px;
     font-weight: bold;
-margin-left: -10vw;
+margin-left: 10vw;
     opacity: 0;
   animation: fade-in 1.5s ease-in forwards;
     margin-bottom: 20vh;
@@ -126,6 +134,10 @@ margin-left: -10vw;
   display: inline-block; /* Ensure the changing text occupies a fixed space */
   white-space: nowrap;
   width:20vw;
+}
+
+.icons{
+  max-width: 40vw;
 }
 
 #review{
@@ -181,6 +193,7 @@ margin-left: -10vw;
     background-color: transparent;
     font-size: 26px;
     color:#AEAEAE;
+    claret-color: red;
   }
   
   .search-box input:focus {
