@@ -249,6 +249,9 @@ a::after {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-bottom: 8vh;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .navigation{
@@ -280,6 +283,7 @@ a::after {
   padding: 35px;
   background-color: var(--lighter-shade);
   transition: all .2s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 .swiper-button-prev::after,
@@ -553,17 +557,23 @@ a::after {
   /* swiper section */
 
   .aboutP{
-    height:90vh;
+    height:60vh;
   }
 
   .about-header{
     width: 40%;
   }
 
+  .swiper-container{
+    width: 100vw;
+    margin-left: -1vw;
+  }
+
   .swiper-text{
-    width:70vw;
+    width:65vw;
     font-size:1.1em;
-    padding-top: 15%;
+    padding-top: 12%;
+    height: 30vh;
   }
 
   .swiper-button-prev,
