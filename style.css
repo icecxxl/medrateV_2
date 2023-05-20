@@ -36,11 +36,26 @@
     width:100vw;
 }
 
-.logo-svg {
-   height:36px;
-    width:183px;
+.logo{
+  width:8.3vw;
+  color:#000;
+  display:flex;
+  justify-content: space-around;
+}
+
+.medrate{
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.logo > img {
+   height: 30px;
+   width:45px;
+   padding-left: 15px;
     
 }
+
 
 ul {
     display:flex;
@@ -117,7 +132,7 @@ a::after {
 .hero-heading{
   display: flex;
   justify-content: space-around;
-    width:80vw;
+    width:70vw;
     font-size: 120px;
     font-weight: bold;
     margin-bottom: 10vh;
@@ -157,8 +172,6 @@ a::after {
   }
 }
 
-
-
 .search-box {
     position:relative;
     z-index:2;
@@ -168,7 +181,6 @@ a::after {
     height: 65px;
     background-color: #fff;
     border-radius: 20px;
-    border: 1px solid #000;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease-in-out;
@@ -185,6 +197,7 @@ a::after {
     background-color: transparent;
     font-size: 26px;
     color:#AEAEAE;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1) inset;
   }
   
   .search-box input:focus {
@@ -445,6 +458,15 @@ a::after {
 
 
   @media screen and (max-width: 768px) {
+    .logo{
+      padding-left: 8vw;
+      width:30vw;
+    }
+
+    .medrate{
+      margin-left: 5px;
+    }
+    
     .hero {
       flex-direction: column;
       max-height: 80vh;
