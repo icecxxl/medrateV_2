@@ -466,10 +466,14 @@ a::after {
     .medrate{
       margin-left: 5px;
     }
+
+    .head{
+      height: 8vh;
+    }
     
     .hero {
       flex-direction: column;
-      max-height: 80vh;
+      max-height: 90vh;
       justify-content:center;
     }
     
@@ -480,8 +484,8 @@ a::after {
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-     font-weight: bolder;
-     margin-right:51vw;
+      font-weight: bolder;
+      margin-right:min(max(36vw, 50%));
     }
 
     .hero-heading span{
