@@ -116,8 +116,10 @@ a::after {
     width:80vw;
     font-size: 120px;
     font-weight: bold;
- 
     margin-bottom: 10vh;
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+  
 }
 
 .hero-heading span {
@@ -138,8 +140,7 @@ a::after {
   opacity: 1;
 }
 
-
-/* @keyframes fade-in {
+ @keyframes fade-in {
   0% {
     opacity: 0;
     transform: perspective(100px) translateY(20px);
@@ -152,9 +153,7 @@ a::after {
   }
 }
 
-.hero-heading span {
-  display: inline-block;
- } */
+
 
 .search-box {
     position:relative;
@@ -204,10 +203,7 @@ a::after {
     font-size: 18px;
   }
   
-  
-  
-
-
+/* slides section */
 .aboutP{
     height:100vh;
     display:flex;
@@ -215,23 +211,12 @@ a::after {
     overflow:hidden;
 }
 
-.about-header{
-  align-self: center;
-  margin-top: 3vh;
-  font-size: clamp(24px, 3.5vw, 48px);
-  font-weight: 500;
-  width:20vw;
-  text-align: center;
-}
 
-.about-span{
-  color:var(--secondary-color);
-}
-
-/* slides section */
 .swiper-container{
   position:relative;
-  
+  width: 70vw;
+  overflow:hidden;
+  margin: 7vh 14vw;
 }
 
 .swiper-slide {
@@ -254,8 +239,8 @@ a::after {
 
 .swiper-text{
   background-color: var(--primary-color);
-  height: 50vh;
-  width: 60vw;
+  height: 40vh;
+  width: 50vw;
   text-align: center;
   padding: 8% 5%;
   font-size:36px;
@@ -284,7 +269,7 @@ a::after {
   position:absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 120px;
+  width: 80px;
   height: 63px;
   border-radius: 50%;
   display: flex;
