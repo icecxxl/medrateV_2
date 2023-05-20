@@ -1,3 +1,4 @@
+// Initialize Swiper section
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   autoplay: {
@@ -23,7 +24,6 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
-
 
 const navLink = document.querySelectorAll(".nav-link");
 
