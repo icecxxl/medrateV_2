@@ -59,7 +59,7 @@ changeText();
 // Set an interval to call the changeText function every 2 seconds
 setInterval(changeText, 3000);
 
-// reviews section
+// reviews section, toggle content of each review card
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
 const reviewCards = document.querySelectorAll('.review-card');
