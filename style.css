@@ -104,14 +104,10 @@ a::after {
     border-radius: 10px;
     cursor:pointer;
     padding-top: 3px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
     transition:all .2s ease-in-out;
-    
-}
-
-.signin > a:hover::after{
-  background: none ;
+    font-size: 15px;
 }
 
 
@@ -136,10 +132,11 @@ a::after {
 .hero-heading{
   display: flex;
   justify-content: space-around;
-    width:70vw;
+    width:80vw;
     font-size: 120px;
     font-weight: bold;
     margin-bottom: 10vh;
+    margin-right: 9vw;
     opacity: 0;
     animation: fade-in 1.5s ease-in-out forwards;
   
@@ -344,6 +341,9 @@ a::after {
   .reviewsP{
     background-color: var(--primary-color);
     height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
   }
 
   .review-header{
@@ -358,36 +358,32 @@ a::after {
     color:var(--secondary-color);
   }
 
-  .reviews-main{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 20px;
-    padding-left: 2vw;
-    height:70vh;
-    margin-top:8vh;
-  }
+  /* CSS styles for review cards */
+.review-card {
+  display: none;
+}
 
-  .review-card{
-    width:30vw;
-    background-color: var(--lighter-shade);
-    font-size: 15px;
-    border-radius: 16px;
-    height: 200px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding:5%;
-    background-image: url(assets/Vector\ 1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+.show-card {
+  display: flex;
+  height:50vh;
+  align-items: center;
+}
 
-/* change to italics */
-  .review-text{
-    font-weight: 400;
-    text-decoration: italic;
-  }
+.reviews{
+ width: 50vw;
+ 
+  
+}
+
+.identity{
+
+}
+
+.person-review{
+  background-color: #fff;
+  height:70%;
+  
+}
 
 
 /* footer section */
@@ -470,14 +466,10 @@ a::after {
     .medrate{
       margin-left: 5px;
     }
-
-    .head{
-      height: 8vh;
-    }
     
     .hero {
       flex-direction: column;
-      max-height: 90vh;
+      max-height: 80vh;
       justify-content:center;
     }
     
@@ -488,8 +480,8 @@ a::after {
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-      font-weight: bolder;
-      margin-right:min(max(36vw, 50%));
+     font-weight: bolder;
+     margin-right:51vw;
     }
 
     .hero-heading span{
