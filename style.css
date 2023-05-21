@@ -96,7 +96,7 @@ a::after {
 }
 
 .signin{
-    width:95px;
+    width:130px;
     text-align: center;
     height:33px;
     background-color: transparent;
@@ -107,7 +107,7 @@ a::after {
     font-weight: 500;
     margin-bottom: 5px;
     transition:all .2s ease-in-out;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
@@ -124,7 +124,7 @@ a::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:90vh;
+    height:95vh;
     overflow: hidden;
 
 }
@@ -134,11 +134,11 @@ a::after {
   justify-content: space-around;
     width:80vw;
     font-size: 120px;
-    font-weight: bold;
+    font-weight: 1000;
     margin-bottom: 10vh;
     margin-right: 9vw;
     opacity: 0;
-    animation: fade-in 1.5s ease-in-out forwards;
+    animation: fade-in 2s ease-in-out forwards;
   
 }
 
@@ -199,7 +199,10 @@ a::after {
     font-size: 26px;
     color:#AEAEAE;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1) inset;
+     
   }
+
+  
   
   .search-box input:focus {
     color: #000;    
@@ -382,7 +385,7 @@ a::after {
 .person-review{
   background-color: #fff;
   height:70%;
-  
+  width:50vw;
 }
 
 
