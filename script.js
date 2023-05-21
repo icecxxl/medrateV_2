@@ -58,3 +58,26 @@ changeText();
 
 // Set an interval to call the changeText function every 2 seconds
 setInterval(changeText, 3000);
+
+// reviews section
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+const reviewCards = document.querySelectorAll('.review-card');
+let newIndex = 0;
+
+// Display the initial review card
+reviewCards[newIndex].classList.add('show-card');
+
+// Event listener for the previous button
+prevButton.addEventListener('click', () => {
+  reviewCards[newIndex].classList.remove('show-card');
+  newIndex = (newIndex - 1 + reviewCards.length) % reviewCards.length;
+  reviewCards[newIndex].classList.add('show-card');
+});
+
+// Event listener for the next button
+nextButton.addEventListener('click', () => {
+  reviewCards[newIndex].classList.remove('show-card');
+  newIndex = (newIndex + 1) % reviewCards.length;
+  reviewCards[newIndex].classList.add('show-card');
+});
