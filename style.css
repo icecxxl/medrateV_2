@@ -121,31 +121,53 @@ a::after {
 .hero{
     background: var(--primary-color);
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height:95vh;
     overflow: hidden;
+    width:100vw;
+}
 
+.hero-left{
+  width: 45vw;
+}
+
+.hero-right{
+ 
 }
 
 .hero-heading{
   display: flex;
-  justify-content: space-around;
-    width:80vw;
+  justify-content: center;
+  flex-direction: column;
+    width:80%;
     font-size: 120px;
     font-weight: 1000;
     margin-bottom: 10vh;
-    margin-right: 9vw;
+    margin-left: ;
     opacity: 0;
     animation: fade-in 2s ease-in-out forwards;
-  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-heading span {
   transition: opacity 0.3s;
-  width:20vw;
+  width:30vw;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#changing-text{
+ text-align: center;
+ padding-right: min(5%);
+  width:100%;
+  background-color: #FFA800;
+  
+}
+
+.hero-right img{
+  max-width: 30vw;
 }
 
 #review{
