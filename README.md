@@ -1,3 +1,3 @@
-# medrateV_2
+# medrate_v44
 
-Live Preview --> https://sefeoluwa.github.io/medrateV_2/
+Live Preview --> (https://github.com/icecxxl/medrate_v44)https://github.com/icecxxl/medrate_v44
