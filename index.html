@@ -6,128 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   
    
     <title>MedRate</title>
 </head>
 <body>
     <section class="head">
         <header class="header">
-            <div class="logo"><img href="assets/medrate.svg" alt="medrate logo" class="logo-svg"></div>
+            <div class="logo">
+                <img src="assets/pngwing.com copy 2.png" alt="medrate logo" class="star">
+                <p class="medrate">MedRate</p>
+            </div>
             <nav class="navs">
-                <ul>
-                    <li class="list about"><a href="#aboutP">About</a></li>
-                    <li class="list find">Find Hospitals</li>
-                    <li class="list reviews"><a href="#reviewsP">Check reviews</a></li>
-                    <li class="list contact">Contact Us</li>
-                     <li  class="signin list">Sign in</li>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="list about nav-item"><a href="#aboutP">About</a></li>
+                    <li class="list contact nav-item"><a href="#contactP">Contact Us</a></li>
+                    <li  class="signin list nav-item"> <a href="#">Sign in</a> </li>
                 </ul>
             </nav>
+            
         </header>
     </section>
 
-    <section class="hero">
-        <div class="hero-left">
-            <h1 class="hero-heading">Find and Rate Hospitals near you</h1>
+    <section class="hero">            
+        <h1 class="hero-heading">
+            <span id="changing-text">Rate</span>
+            <span id="review">Healthcare</span>
+          </h1>
+          
             <div class="search-box">
-                <input type="text" placeholder="Find hospitals">
+                <input type="text" placeholder="Search by name or location">
                 <form action="#" method="post" class="search-btn">
                   <button class="search-btn"><i class="fa fa-search"></i></button>
                 </form>
               </div>
-              
-        </div>
-
-        <div class="hero-right">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_akvycwlq.json"  background="transparent"  speed="1" loop  autoplay class="map"></lottie-player>
-        </div>
     </section>
 
     <section class="aboutP" id="aboutP">
-        <h2 class="about-header">What we are <span class="about-span">about</span></h2>
 
-        <div class="container swiper">
-            <div class="slide-container">
-               <div class="card-wrapper swiper-wrapper">
-                      <div class="card swiper-slide">
-                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
-                      </div>
-                      
-                      <div class="card swiper-slide">
-                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
-                      </div>
-      
-                      <div class="card swiper-slide">
-                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
-                      </div>
-      
-                      <div class="card swiper-slide">
-                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
-                      </div>
-      
-                      <div class="card swiper-slide">
-                          <p class="card-text">How would you describe your last visit to a healthcare provider?</p>
-                      </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                    <p class="swiper-text">How was your last visit to an healthcare provider?</p> 
                 </div>
+              <div class="swiper-slide"> 
+                 <p class="swiper-text">Would you like to know what others are saying?</p> 
+                </div>
+              <div class="swiper-slide">
+                 <p class="swiper-text">Join the effort to make healthcare more accountable and transparent.</p>
+                </div>
+              <!-- <div class="swiper-slide">
+                <p class="swiper-text">You can rate and give valuable insights about healthcare providers.</p>
+            </div> -->
+              <div class="swiper-slide">
+                <p class="swiper-text">Your ratings would improve healthcare quality for patients everywhere.</p>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-      
-          </div>        
+            </div>
+           <div class="navigation">
+                <div class="arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+           </div>
+        </div>
+                
     </section>
 
     <section class="reviewsP" id="reviewsP">
         <h2 class="review-header">Check out recent <span class="review-span">reviews</span></h2>
-
-        <div class="reviews-main">
-            <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
+        
+        <i class="fa-duotone fa-quotes" style="--fa-primary-color: #f57900; --fa-secondary-color: #f57900;"></i>
+        <div class="reviews">
+          <div class="review-card">
+            <div class="identity">
+             <img src="" alt="Male avatar">
+             <p class="name">Philip</p>
             </div>
-    
-            <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
+            <div class="person-review">
+             <p class="hospital">UCH</p>
+             <p class="review">Quite Scary NGL. But appreciate the work ethic of the doctors and nurses. Maybe cause my mum's an health worker so the experience might be different from an average person</p>
             </div>
-    
-            <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
+           </div>  
+           <div class="review-card">
+             <div class="identity">
+              <img src="" alt="Male avatar">
+              <p class="name">Abdulrahman</p>
+             </div>
+            <div class="person-review">
+             <p class="hospital">OAU Health Center</p>
+             <p class="review">It is decent. While services have improved over the last few years, there is still a gap. Response time aren't as fast, the in-house Pharmacy does not restock often and Doctors are not enough.</p>
             </div>
-    
+            </div>  
+   
             <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
-            </div>
-    
+             <div class="identity">
+              <img src="" alt="Male avatar">
+              <p class="name">Gideon</p>
+             </div>
+             <div class="person-review">
+               <p class="hospital">Powerline Primary Health Centre, Orile, Agege, Lagos State.</p>
+              <p class="review">I was sick and they  made us go through a more weakening process of registering with the hospital before receiving any medical attention. After waiting for what seemed like eternity, I was forcefully given an injection, butt-naked in a ward room filled with nurses and visitors. I was too sick to feel embarrassed but the after effects were traumatizing. A whole Idan like me. </p>
+             </div>
+            </div>  
+   
             <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
-            </div>
-    
+             <div class="identity">
+              <img src="" alt="Female avatar">
+              <p class="name">Dora</p>
+             </div>
+             <div class="person-review">
+               <p class="hospital">Bowen Hospital</p>
+              <p class="review">Mediocre but competent</p>
+             </div>
+            </div>  
+   
             <div class="review-card">
-                <img src="assets/Group 21.svg" alt="user avatar">
-                <img src="assets/Group 25.svg" alt="user rating">
-                <p class="review-notis">Christina reviewed West care</p>
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur. Nunc ell nulla sed urna consequat leo pulvina blandit nibh. Aliquam mauris enim eget iaculis bibendum amet urna consequat </p>
-            </div>
-    
+             <div class="identity">
+              <img src="" alt="Male avatar">
+              <p class="name">Damilare</p>
+             </div>
+             <div class="person-review">
+               <p class="hospital">UCH</p>
+              <p class="review">They provide a relatively quality service, but they are under staffed. They also need to have a good feedback system. </p>
+             </div>
+            </div>  
         </div>
+
+       <div class="reviews-buttons">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+              
+       </div>
+      </section>
+
+    <section class="foot-sect">
+        <footer class="footer">
+            <div class="footer-texts">
+                <p class="about-us"><a href="#" class="foot-text">About Us</a></p>
+                <p class="privacy"><a href="#" class="foot-text">Privacy Policy</a></p>
+                <p class="terms"><a href="#" class="foot-text">Terms of Use</a></p>
+                <p class="get-contact"><a href="#" class="foot-text">Get In Touch</a></p>
+            </div>
+            <div class="socials">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="copyright">
+                <p class="copy">© MedRate Team. All rights reserved.</p>
+            </div>
+        </footer>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script type="module" src="./script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
 </body>
 </html>
