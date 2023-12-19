@@ -134,7 +134,7 @@ a::after {
 }
 
 .hero-right{
- 
+ width: 0vw
 }
 
 .hero-heading{
@@ -145,7 +145,7 @@ a::after {
     font-size: 120px;
     font-weight: 1000;
     margin-bottom: 10vh;
-    margin-left: ;
+    margin-left: 0vh;
     opacity: 0;
     animation: fade-in 2s ease-in-out forwards;
   font-family: Arial, Helvetica, sans-serif;
