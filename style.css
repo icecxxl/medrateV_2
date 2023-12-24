@@ -403,7 +403,8 @@ a::after {
 }
 
 .identity{
-
+  font-family: 'Quicksand', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .person-review{
