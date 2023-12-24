@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&family=Rubik Mono One:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 *{
@@ -13,7 +13,7 @@
     --primary-color: #FFF0DE;
     --secondary-color: #FFA800;
     --lighter-shade: #fff7ed;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -403,7 +403,7 @@ a::after {
 }
 
 .identity{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
   font-family: Arial, Helvetica, sans-serif;
 }
 
